@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     mysql-client \
     libmysqlclient-dev
 
-RUN pip install MySQL-python psycopg2 sentry redis 
+RUN pip install MySQL-python psycopg2 sentry redis==2.8.0 
 
 EXPOSE 80
 ADD sentry.conf.py /sentry.conf.py
