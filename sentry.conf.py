@@ -16,6 +16,8 @@ DATABASES = {
 # If you're expecting any kind of real traffic on Sentry, we highly recommend
 # configuring the CACHES and Redis settings
 
+SENTRY_URL_PREFIX = os.getenv('URL_PREFIX', 'http://localhost')
+
 ###########
 ## CACHE ##
 ###########
